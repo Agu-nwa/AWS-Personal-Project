@@ -20,3 +20,4 @@ Successfully hosted a web server on AWS.
 ## Screenshots
 - EC2 Dashboard
 - Nginx Homepage
+Access URL: http://http://54.221.xxx.xx
