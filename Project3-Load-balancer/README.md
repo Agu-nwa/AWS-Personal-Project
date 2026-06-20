@@ -165,3 +165,11 @@ DNS name generated
 Listener active on port 80
 Target group attached
 
+## 🔁 Step 8: Traffic Rotation & High Availability Test
+
+### Test Method
+Access the Application Load Balancer DNS in a browser:
+
+```text
+http://Port-166592940.us-east-1.elb.amazonaws.com
+
