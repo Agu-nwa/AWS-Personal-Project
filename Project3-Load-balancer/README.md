@@ -122,3 +122,46 @@ Target group created successfully
 All instances registered
 Health status: healthy
 
+## 🌐 Step 6: Create Application Load Balancer (ALB)
+
+### Action (AWS Console)
+- Navigate to AWS EC2 Dashboard
+- Go to Load Balancers
+- Click "Create Load Balancer"
+- Select "Application Load Balancer"
+
+---
+
+### Configuration Used
+
+- Name: project2-alb  
+- Scheme: Internet-facing  
+- IP Type: IPv4  
+- VPC: Default VPC  
+- Availability Zones: Selected all available zones  
+
+---
+
+### Listener Configuration
+
+- Protocol: HTTP  
+- Port: 80  
+- Default Action: Forward to Target Group (Project2-TG)
+
+---
+
+### Security Group Settings
+
+- Allow inbound HTTP (80) from 0.0.0.0/0
+- Allow outbound traffic to EC2 instances
+
+---
+
+### Output (System Result)
+
+```text id="alb_out"
+Load Balancer created successfully
+DNS name generated
+Listener active on port 80
+Target group attached
+
