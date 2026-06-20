@@ -50,3 +50,38 @@ echo "Load Balancer Test" | sudo tee -a /var/www/html/index.html
 
 Load Balancer Test
 
+
+## 🖥️ Step 4.1: Connect to EC2-2 Instance
+
+### Command
+```bash
+ssh -i ~/Documents/port.pem ubuntu@54.221.xxx.xx
+
+Welcome to Ubuntu 26.04 LTS (GNU/Linux 7.0.0-1006-aws x86_64)
+
+ * Documentation:  https://docs.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Jun 20 15:15:05 UTC 2026
+
+  System load:  0.0               Temperature:           -273.1 C
+  Usage of /:   34.3% of 6.61GB   Processes:             120
+  Memory usage: 30%               Users logged in:       0
+  Swap usage:   0%                IPv4 address for ens5: 172.31.21.76
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Sat Jun 20 15:03:30 2026 from 102.90.124.169
+
