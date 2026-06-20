@@ -173,3 +173,19 @@ Access the Application Load Balancer DNS in a browser:
 ```text
 http://Port-166592940.us-east-1.elb.amazonaws.com
 
+## 🧭 Step 9: System Architecture Overview
+
+### Architecture Diagram
+
+```text
+Internet
+   |
+   v
+Application Load Balancer (ALB)
+   |
+   v
+Target Group
+   |
+   ├── EC2-1 (Nginx Web Server)
+   ├── EC2-2 (Nginx Web Server)
+   └── EC2-3 (Nginx Web Server)
