@@ -85,3 +85,40 @@ See https://ubuntu.com/esm or run: sudo pro status
 
 Last login: Sat Jun 20 15:03:30 2026 from 102.90.124.169
 
+## ⚖️ Step 5: Create Target Group for Load Balancer
+
+### Action (AWS Console)
+- Navigate to AWS EC2 Dashboard
+- Go to Target Groups
+- Click "Create Target Group"
+
+---
+
+### Configuration Used
+- Target Type: Instances  
+- Protocol: HTTP  
+- Port: 80  
+- VPC: Default VPC  
+
+---
+
+### Registered Targets
+- EC2-1 (Backend Server 1)
+- EC2-2 (Backend Server 2)
+- EC2-3 (Backend Server 3)
+
+---
+
+### Health Check Configuration
+- Protocol: HTTP  
+- Path: /  
+- Interval: 30 seconds  
+
+---
+
+### Output (System Result)
+```text id="tg_out"
+Target group created successfully
+All instances registered
+Health status: healthy
+
