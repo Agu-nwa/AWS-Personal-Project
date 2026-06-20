@@ -41,3 +41,12 @@ sudo systemctl status nginx
              └─7843 "nginx: worker process"
 
 Jun 20 11:09:36 ip-172-31-30-140 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
+
+## 🧪 Step: Append Content to Web Page (EC2)
+
+### Command
+```bash
+echo "Load Balancer Test" | sudo tee -a /var/www/html/index.html
+
+Load Balancer Test
+
